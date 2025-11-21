@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Redações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-book"></i>
+                <span>Meu Portfólio</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#redacoes">Redações</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#agradecimentos">Agradecimentos</a></li>
+            </ul>
+
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Minha Jornada na Escrita</h1>
+            <p>15 redações que mostram minha evolução durante o ano letivo</p>
+            <button class="cta-btn" onclick="scrollToSection('redacoes')">
+                <i class="fas fa-arrow-down"></i>
+                Ver Redações
+            </button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Redações Section -->
+    <section id="redacoes" class="redacoes">
+        <div class="container">
+            <h2>Minhas Redações</h2>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" placeholder="Buscar redação...">
+            </div>
+
+            <div class="redacoes-grid" id="redacoesGrid">
+                <!-- JavaScript vai preencher aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section Atualizada -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Minha Jornada de Aprendizado</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Este portfólio é o resultado de um ano inteiro de dedicação, crescimento e descobertas através da escrita. Cada uma das 15 redações aqui apresentadas representa não apenas um exercício escolar, mas uma etapa do meu desenvolvimento pessoal e intelectual.</p>
+                    
+                    <p>Ao longo destes 10 meses, aprendi que escrever vai muito além de colocar palavras no papel. É sobre organizar pensamentos, expressar emoções, defender ideias e, principalmente, sobre encontrar minha própria voz no mundo.</p>
+
+                    <div class="destaques">
+                        <div class="destaque-item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Evolução Constante</h4>
+                            <p>Do básico ao complexo, cada texto mostra meu progresso</p>
+                        </div>
+                        <div class="destaque-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Descobertas</h4>
+                            <p>Encontrei paixão por temas que nem imaginava</p>
+                        </div>
+                        <div class="destaque-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Dedicação</h4>
+                            <p>Cada palavra foi escrita com empenho e cuidado</p>
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="number">15</span>
+                            <span class="label">Redações</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">10</span>
+                            <span class="label">Meses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">3k+</span>
+                            <span class="label">Palavras</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">100%</span>
+                            <span class="label">Dedicação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agradecimentos -->
+    <section id="agradecimentos" class="agradecimentos">
+        <div class="container">
+            <h2>Agradecimentos</h2>
+            <div class="agradecimentos-grid">
+                <div class="agradecimento-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Professores</h3>
+                    <p>Pela paciência e dedicação em ensinar</p>
+                </div>
+                <div class="agradecimento-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Colegas</h3>
+                    <p>Pelo companheirismo e aprendizado conjunto</p>
+                </div>
+                <div class="agradecimento-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Família</h3>
+                    <p>Pelo apoio incondicional em minha jornada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Meu nome é Emanuele, obrigado por me acompanhar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
